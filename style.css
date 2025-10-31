@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #390ba549; 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+   
+  
+}
+.main{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(88, 86, 86);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+
+}
+.main button{
+    cursor: pointer;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #19181aaf;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+     animation: fadeIn 0.2s;
+    
+   
+
+}
+
+.mymodal p{
+    text-align: center;
+    font-size: larger;
+   
+}
+.mymodal{
+    width: 35%;
+    height: 200px;
+    background-color: #eeebf5;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-top: 60px;
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 34%;
+    left: 34%;
+    z-index: 1;
+    animation: zoomIn 0.2s;
+    
+    
+}
+
+.mymodal button{
+    width: 80px;
+    min-width: 40px;
+    align-self: self-end;
+    margin: 0 40%;
+    cursor: pointer;
+
+}

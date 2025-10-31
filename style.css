@@ -27,6 +27,7 @@ body{
     border: 2px solid rgb(88, 86, 86);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 1;
+    
 
 }
 .main button{
@@ -41,7 +42,8 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-     animation: fadeIn 0.2s;
+    z-index: 0;
+    
     
    
 
@@ -53,19 +55,21 @@ body{
    
 }
 .mymodal{
-    width: 35%;
+    width: 65%;
     height: 200px;
     background-color: #eeebf5;
     border-radius: 10px;
     border: 1px solid black;
-    padding-top: 60px;
-    display: none;
-    position: absolute;
-    top: 30%;
-    right: 34%;
-    left: 34%;
-    z-index: 1;
-    animation: zoomIn 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    opacity: 0;
+    animation-duration: 0.3s;
+   
+    
+ 
     
     
 }
@@ -73,8 +77,11 @@ body{
 .mymodal button{
     width: 80px;
     min-width: 40px;
-    align-self: self-end;
-    margin: 0 40%;
+   
     cursor: pointer;
+
+}
+
+@media  only screen and (max-width:500px) {
 
 }
